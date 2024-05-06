@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "reclamation",
+	"version": "${version}",
+
+	"name": "Reclamation",
+	"description": "Reclaim items lost upon death using a spectral spyglass!",
+	"authors": [
+		"friedkeenan"
+	],
+
+	"contact": {
+        "homepage": "https://github.com/friedkeenan/reclamation",
+        "sources": "https://github.com/friedkeenan/reclamation",
+        "issues": "https://github.com/friedkeenan/reclamation/issues"
+    },
+
+	"license": "ISC",
+	"icon": "assets/reclamation/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.friedkeenan.reclamation.Reclamation"
+		],
+
+		"fabric-datagen": [
+			"io.github.friedkeenan.reclamation.data.ReclamationDataGenerator"
+		]
+	},
+
+	"mixins": [
+		"reclamation.mixins.json",
+
+		{
+			"config": "reclamation.client.mixins.json",
+			"environment": "client"
+		}
+	],
+
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

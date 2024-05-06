@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "io.github.friedkeenan.reclamation.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+
+	"client": [
+		"ExtendRenderArm",
+		"AddRoundedSpectralSpyglassModel",
+		"ExtendRenderItem",
+		"ExtendSpyglassScope",
+		"EnableGlowingItems",
+		"RenderDeathItemsFurther"
+	],
+
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
